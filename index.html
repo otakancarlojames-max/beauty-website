@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty of E083</title>
+    <style>
+        /* Modern Reset & Typography */
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Helvetica Neue', sans-serif; }
+        body { background-color: #fff; color: #1a1a1a; }
+
+        /* Navigation */
+        nav { display: flex; justify-content: space-between; align-items: center; padding: 20px 5%; background: #fff; border-bottom: 1px solid #eee; position: sticky; top: 0; z-index: 100; }
+        .logo { font-size: 24px; font-weight: 800; letter-spacing: 4px; text-transform: uppercase; }
+        .nav-links a { text-decoration: none; color: #1a1a1a; margin-left: 25px; font-size: 14px; text-transform: uppercase; letter-spacing: 1px; }
+
+        /* Hero Section */
+        .hero { height: 80vh; background: #f4f4f4; display: flex; align-items: center; justify-content: center; text-align: center; flex-direction: column; }
+        .hero h1 { font-size: 60px; text-transform: uppercase; margin-bottom: 20px; letter-spacing: 10px; }
+        .cta-button { padding: 15px 40px; background: #1a1a1a; color: #fff; text-decoration: none; font-weight: bold; transition: 0.3s; }
+        .cta-button:hover { background: #444; }
+
+        /* Products Grid */
+        .container { padding: 80px 5%; }
+        .section-title { margin-bottom: 40px; text-align: center; text-transform: uppercase; letter-spacing: 2px; }
+        .product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; }
+        .product-card { text-align: center; }
+        .product-image {
+    width: 100%;
+    height: 300px;
+    background-color: #ddd; /* your gray box */
+    border-radius: 8px;
+    overflow: hidden;
+}
+    .product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  /* makes image fill the box */
+    display: block;
+}  
+        .product-image:hover { opacity: 0.8; }
+        .product-info h3 { font-size: 16px; margin-bottom: 5px; }
+        .product-info p { color: #666; font-size: 14px; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">Beauty of E083</div>
+        <div class="nav-links">
+            <a href="#">Shop</a>
+            <a href="#">Collections</a>
+            <a href="#">About</a>
+            <a href="#">Cart (0)</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <h1>ESSENTIALS 2026</h1>
+        <p style="margin-bottom: 30px; color: #555;">Unleash Your Inner Beauty.</p>
+        <a href="#" class="cta-button">SHOP THE DROP</a>
+    </section>
+
+    <div class="container">
+        <h2 class="section-title">New Arrivals</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <div class="product-image">
+                 <img src="cat-front-BP-50035437.JPG" alt="Y.O.U Beauty Cosmetics"></div>
+                <div class="product-info">
+                    <h3>Y.O.U Beauty Cosmetics</h3>
+                    <p>$45.00</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                 <img src="16993249409014_600x600.JPG" alt="Y.O.U Radiance Glow Serum"></div>
+                <div class="product-info">
+                    <h3>Y.O.U Radiance Glow Serum</h3>
+                    <p>$120.00</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                <img src="669645d4ea68c.JPG" alt="Y.O.U Highlighter"></div>
+                <div class="product-info">
+                    <h3>Y.O.U Highlighter</h3>
+                    <p>$85.00</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
